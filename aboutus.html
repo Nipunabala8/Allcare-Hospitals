@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allcare Hospital</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+   <!-- Fixed Navigation Bar -->
+   <header>
+    <nav>
+        <div class="logo">
+            <img src="images/allcare.png" alt="Hospital Logo">
+        </div>
+        <ul class="nav-links">
+            <li class="hideonmobileview"><a href="index.html">Home</a></li>
+            <li class="hideonmobileview"><a href="aboutus.html">About Us</a></li>
+            <li class="hideonmobileview"><a href="services.html">Services</a></li>
+            <li class="hideonmobileview"><a href="#">Doctors</a></li>
+            <li class="hideonmobileview"><a href="#">Reservations</a></li>
+            <li class="hideonmobileview"><a href="#">Pharmacy</a></li>
+            <li class="mobile-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Pharmacy</a></li>
+        </ul>
+    </nav>
+    <script>
+       function showSidebar(){
+         const sidebar = document.querySelector('.sidebar')
+         sidebar.style.display = 'flex'
+       }
+       function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+
+       }
+
+    </script>
+</header>
+
+
+
+    <!-- Section 1: About Us -->
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Allcare hospitals has been serving the community for over 25 years. We offer a range of specialized healthcare services, including emergency care, surgery, and diagnostics, in a state-of-the-art facility. Our highly skilled doctors, nurses, and staff are dedicated to providing compassionate and personalized care to each patient.</p>
+        <p>We focus on using the latest medical technologies and treatments to ensure our patients receive the best possible care. From modern surgical theaters to our intensive care units, we are equipped to handle a variety of medical needs. At the heart of our mission is a commitment to patient-centered care, ensuring that each individual receives personalized attention and treatment. Our hospital is open 24/7 and provides a safe, comfortable environment for all patients and visitors.</p>
+    </section>
+
+    <!-- Section 2: Branch 1 -->
+    <section class="branch">
+        <h3>1:Colombo Hospital</h3>
+        <br>
+        <p>This branch is located in the heart of Colombo, providing advanced medical treatments and services. We specialize in emergency care, surgeries, and offer a fully equipped ICU. The Colombo branch is also home to several top medical specialists.</p>
+        <br>
+        <div class="branch-content">
+            <img src="images/hospital1.png" alt="Colombo Branch Image" class="branch-img">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.0907188577903!2d79.86637465686128!3d6.923351147282374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2590c4c16f2ab%3A0x98a4771b15f66351!2s89%20Vipulasena%20Mawatha%2C%20Colombo%2001000!5e0!3m2!1sen!2slk!4v1726029930532!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Section 3: Branch 2 -->
+    <section class="branch">
+        <h3>2:Galle Hospital</h3>
+        <br>
+        <p>Our Galle branch is well known for its expertise in cardiac care, oncology, and general medicine. With advanced diagnostic tools and a team of specialists, this branch caters to a wide range of patient needs.</p>
+        <br>
+        <div class="branch-content">
+            <img src="images/hospital2.png" alt="Galle Branch Image" class="branch-img">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.8708242673556!2d80.21669959856978!3d6.065366966200225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb6932fce3%3A0x4a35b903f9c64c03!2sGalle!5e0!3m2!1sen!2slk!4v1726030361990!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Section 4: Branch 3 -->
+    <section class="branch">
+        <h3>3:Jaffna Hospital</h3>
+        <br>
+        <p>Our Jaffna branch is equipped with world-class pediatric and maternity care facilities. It also offers comprehensive services in orthopedics, neurology, and urology. We provide a comfortable and modern environment for our patients.</p>
+        <br>
+        <div class="branch-content">
+            <img src="images/hospital3.png" alt="Jaffna Branch Image" class="branch-img">
+            <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2338.6629944405745!2d80.02300639602642!3d9.668507896509025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe541deb726dcb%3A0x3829f4483317cad2!2s117%20Rasavinthoddam%20Rd%2C%20Jaffna!5e0!3m2!1sen!2slk!4v1726030599118!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Summary Table -->
+    <section class="summary-table">
+        <h3>Branch Overview</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Branch</th>
+                    <th>Location</th>
+                    <th>Specialty</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Colombo Hospital</td>
+                    <td>Colombo</td>
+                    <td>ICU, Emergency Care</td>
+                    <td>0112 778 611</td>
+                </tr>
+                <tr>
+                    <td>Galle Hospital</td>
+                    <td>Galle</td>
+                    <td>Cardiac Care, Oncology</td>
+                    <td>0914 640 641</td>
+                </tr>
+                <tr>
+                    <td>Jaffna Hospital</td>
+                    <td>Jaffna</td>
+                    <td>Pediatrics, Maternity Care</td>
+                    <td> 0212 223 388</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">All branches offer 24/7 emergency services.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Footer-->
+    <footer>
+        <p>All rights reserved &copy; 2024</p>
+        
+    </footer>
+
+</body>
+</html>

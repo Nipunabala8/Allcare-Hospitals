@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allcare Hospital</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+     <!-- Fixed Navigation Bar -->
+     <header>
+        <nav>
+            <div class="logo">
+                <img src="images/allcare.png" alt="Hospital Logo">
+            </div>
+            <ul class="nav-links">
+                <li class="hideonmobileview"><a href="index.html">Home</a></li>
+                <li class="hideonmobileview"><a href="aboutus.html">About Us</a></li>
+                <li class="hideonmobileview"><a href="services.html">Services</a></li>
+                <li class="hideonmobileview"><a href="#">Doctors</a></li>
+                <li class="hideonmobileview"><a href="#">Reservations</a></li>
+                <li class="hideonmobileview"><a href="#">Pharmacy</a></li>
+                <li class="mobile-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Pharmacy</a></li>
+            </ul>
+        </nav>
+        <script>
+           function showSidebar(){
+             const sidebar = document.querySelector('.sidebar')
+             sidebar.style.display = 'flex'
+           }
+           function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+
+           }
+
+        </script>
+    </header>
+
+    <!-- Section 1: Introduction -->
+    <section class="services-intro">
+        <h1>Our Services</h1>
+        <p>Allcare hospitals provide a wide range of medical services designed to meet the needs of our patients. Our highly trained team is dedicated to offering the best healthcare in a compassionate and state-of-the-art environment.</p>
+    </section>
+
+    <!-- Section 2: Services Images -->
+    <section class="services-gallery">
+       
+        <div class="gallery-container">
+            <div class="service-item">
+                <img src="images/icons/imericon.png" alt="Intensive Care">
+                <h3>Intensive Care</h3>
+                <p>24/7 emergency services with highly skilled staff and modern facilities to handle critical conditions efficiently.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/icons/cardiac.png" alt="Cardiac Care">
+                <h3>Cardiac Care Centre</h3>
+                <p>Full range of cardiology services, from preventive heart care to emergency interventions and surgeries.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/icons/mater.png" alt="Maternity Ward">
+                <h3>Maternity Ward</h3>
+                <p>Our Maternity Ward provides a nurturing environment and expert medical guidance for a safe and comfortable childbirth experience.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/icons/pharicon.png" alt="Pharmacy Services">
+                <h3>Pharmacy Services</h3>
+                <p>Our Pharmacy Services provide a convenient and reliable source for obtaining prescribed medications and healthcare products. </p>
+            </div>
+            <div class="service-item">
+                <img src="images/icons/dentalicon.png" alt="Dental Clinic">
+                <h3>Dental Clinic</h3>
+                <p>Your oral health matters, and our Dental Clinic is dedicated to maintaining your smile. Our skilled dentists provide a wide range of dental services ensuring your dental wellness.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/icons/laboricon.png" alt="Laboratory Services">
+                <h3>Laboratory Services</h3>
+                <p>State-of-the-art technology and skilled technicians, we provide reliable and timely laboratory results to support your healthcare needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Registration Link -->
+    <section class="registration">
+        <h2>Patient Registration</h2>
+        <p>Ready to book an appointment? Register now to access our services and get personalized care.</p>
+        <a href="registration.html" class="register-btn">Register Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>All rights reserved &copy; 2024 Private Hospital</p>
+    </footer>
+
+</body>
+</html>
