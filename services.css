@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    padding: 1rem;
     margin-top: 80px;
 }
 .mobile-menu {
@@ -236,7 +235,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #333;
-    color: #fff;
+    color: slategray;
     margin-top: 2rem;
 }
 

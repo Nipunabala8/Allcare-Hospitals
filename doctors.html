@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allcare Hospital</title>
+    <link rel="stylesheet" href="doctors.css">
+</head>
+<body>
+
+     <!-- Fixed Navigation Bar -->
+     <header>
+        <nav>
+            <div class="logo">
+                <img src="images/allcare.png" alt="Hospital Logo">
+            </div>
+            <ul class="nav-links">
+                <li class="hideonmobileview"><a href="index.html">Home</a></li>
+                <li class="hideonmobileview"><a href="aboutus.html">About Us</a></li>
+                <li class="hideonmobileview"><a href="services.html">Services</a></li>
+                <li class="hideonmobileview"><a href="#">Doctors</a></li>
+                <li class="hideonmobileview"><a href="reservations.html">Reservations</a></li>
+                <li class="hideonmobileview"><a href="pharmacy.html">Pharmacy</a></li>
+                <li class="mobile-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+        <script>
+           function showSidebar(){
+             const sidebar = document.querySelector('.sidebar')
+             sidebar.style.display = 'flex'
+           }
+           function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+
+           }
+
+        </script>
+    </header>
+    <main class="grid-container">
+        <h1>Meet Our Doctors</h1>
+        <section class="doctors-grid">
+            <!-- Doctor 1 -->
+            <div class="doctor-card">
+                <img src="images/doc1.jpg" alt="Dr. DISNA AMARATUNGA" class="doctor-image">
+                <div class="doctor-info">
+                    <h2>Dr. DISNA AMARATUNGA</h2>
+                    <p> Cardiology</p>
+                   
+                </div>
+            </div>
+    
+            <!-- Doctor 2 -->
+            <div class="doctor-card">
+                <img src="images/doc2.jpg" alt="Dr. ACHALA ABEYWARDANE" class="doctor-image">
+                <div class="doctor-info">
+                    <h2>Dr. ACHALA ABEYWARDANE</h2>
+                    <p>Obstetrician</p>
+                    
+                </div>
+            </div>
+    
+            <!-- Doctor 3 -->
+            <div class="doctor-card">
+                <img src="images/doc3.jpg" alt="Dr. SHEMOON MARLEEN" class="doctor-image">
+                <div class="doctor-info">
+                    <h2>Dr. SHEMOON MARLEEN</h2>
+                    <p>Pediatrics</p>
+                    
+                </div>
+            </div>
+    
+            <!-- Doctor 4 -->
+            <div class="doctor-card">
+                <img src="images/doc4.jpg" alt="Dr. SANATH P. AKMEEMANA" class="doctor-image">
+                <div class="doctor-info">
+                    <h2>Dr. SANATH P. AKMEEMANA</h2>
+                    <p>Gynaecologist</p>
+                    
+                </div>
+            </div>
+    
+            <!-- Doctor 5 -->
+            <div class="doctor-card">
+                <img src="images/doc5.jpg" alt="Dr. KESARA RANATUNGA" class="doctor-image">
+                <div class="doctor-info">
+                    <h2>Dr. KESARA RANATUNGA</h2>
+                    <p>General Surgeon</p>
+                    
+                </div>
+            </div>
+    
+            <!-- Doctor 6 -->
+            <div class="doctor-card">
+                <img src="images/doc6.jpg" alt="Dr. SHUBA RAO" class="doctor-image">
+                <div class="doctor-info">
+                    <h2>Dr. SHUBA RAO</h2>
+                    <p>Dental Surgeon</p>
+                
+                </div>
+            </div>
+    
+            <!-- Doctor 7 -->
+            <div class="doctor-card">
+                <img src="images/doc7.jpg" alt="Dr. SATHYA WIMALADHARMA" class="doctor-image">
+                <div class="doctor-info">
+                    <h2>Dr. SATHYA WIMALADHARMA</h2>
+                    <p>Physician</p>
+                    
+                </div>
+            </div>
+    
+            <!-- Doctor 8 -->
+            <div class="doctor-card">
+                <img src="images/doc8.jpg" alt="Dr. SUMUDU H. JAYASINGHE" class="doctor-image">
+                <div class="doctor-info">
+                    <h2>Dr. SUMUDU H. JAYASINGHE</h2>
+                    <p>General Surgeon</p>
+                    
+                </div>
+            </div>
+        </section>
+    
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>2024 Allcare Hospitals. All rights reserved.</p>
+    </footer>
+    
+    
+</body>
+</html>    
